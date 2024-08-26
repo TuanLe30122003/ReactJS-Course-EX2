@@ -51,6 +51,12 @@ const StyledTitleAndDes = styled.div`
         color: #8B8B8B;
         margin-top: 5px;
     }
+
+    @media screen and (max-width: 700px) {
+        p {
+            white-space: unset;
+        }
+    }
 `
 
 export default TitleAndDes

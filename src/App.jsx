@@ -1,29 +1,18 @@
 import styled from "styled-components";
-import Header from "./page/Header";
-import CoreServices from "./page/CoreServices";
-import About from "./page/About";
-import Expert from "./page/Expert";
+import Home1 from "./page/Home1/Home1";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home2 from "./page/Home2/Home2";
 
 function App() {
   return (
-    <>
-      <Cover>
-        <Header />
-        <CoreServices />
-        <About />
-        <Expert />
-      </Cover>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home1 />} />
+        <Route path="/home2" element={<Home2 />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
-
-const Cover = styled.div`
-  position: relative;
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-`
 
 
 export default App;

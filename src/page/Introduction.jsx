@@ -13,8 +13,7 @@ const Introduction = () => {
             <div className='intro-cover'>
                 <div className='introduction'>
                     <h1>Clinic & beauty <br /> consultant</h1>
-                    <p>It is a long established fact that a reader will be <br />
-                        by the readable content of a page.</p>
+                    <p>{"It is a long established fact that a reader will be\nby the readable content of a page."}</p>
 
                     <PinkButton buttonName='More Details' width='200px' height='58.36px'/>
                 </div>
@@ -34,11 +33,11 @@ const Introduction = () => {
 }
 
 const StyledIntro = styled.div`
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
+    margin-left: 190px;
     margin-top: 85px;
 
     .intro-cover {
@@ -79,6 +78,7 @@ const StyledIntro = styled.div`
         text-align: left;
         color: #091156;
         margin-bottom: 30px;
+        white-space: pre-line;
     }
 
     .intro__pic img {
@@ -113,6 +113,61 @@ const StyledIntro = styled.div`
     background-color: #414880;
     border-radius: 50px;
 }
+
+
+    @media screen and (max-width: 1224px) {
+        margin-left: 100px;
+
+        .intro__bg img {
+            width: 100%;
+            display: none;
+        }
+    }
+
+    @media screen and (max-width: 1024px) {
+        width: 100vw;
+        margin-left: 0;
+        margin-top: 30px;
+
+        .intro__bg {
+            display: none;
+        }
+
+        .intro__pic img {
+            width: 100%;
+        }
+
+        .intro__pic img {
+            transform: translate(0, 0);
+        }
+
+        .intro-cover {
+            flex-direction: column;
+            width: 100%;
+            gap: 60px;
+            align-items: center;
+        }
+
+        .introduction {
+            align-items: center;
+        }
+
+        .introduction > h1 {
+            text-align: center;
+        }   
+
+        .introduction > p {
+            text-align: center;
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 0 20px;
+
+        .introduction > p {
+            white-space: unset;
+        }
+    }
 `
 
 export default Introduction

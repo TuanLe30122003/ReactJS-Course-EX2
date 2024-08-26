@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-import TitleAndDes from '../components/TitleAndDes'
-import { asset } from '../assets/assets'
+import TitleAndDes from '../../components/TitleAndDes'
+import { asset } from '../../assets/assets'
 
 const serviceData = {
     titleAndDes : {
@@ -40,7 +40,7 @@ const CoreServices = () => {
             des={serviceData.titleAndDes.des}
         />
 
-        <StyledServiceBox>
+        <StyledServiceBox className='service-box'>
             <ServiceItem image={serviceData.serviceBox.service1.image} serviceName={serviceData.serviceBox.service1.name} 
                 serviceDes={serviceData.serviceBox.service1.des}/>
             <ServiceItem image={serviceData.serviceBox.service2.image} serviceName={serviceData.serviceBox.service2.name} 
@@ -62,6 +62,38 @@ const ServiceItem = (props) => {
         </StyledServiceItem>
     )
 }
+
+const StyledServiceBox = styled.div`
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 82px;
+    gap: 56px;
+
+    @media screen and (max-width: 1024px) {
+        flex-direction: column;
+    }
+`
+
+const StyledCoreServices = styled.div`
+    margin-top: 127px;
+    padding: 0 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+    @media screen and (max-width: 1224px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 0 20px;
+    } 
+`
 
 // Styled components
 
@@ -101,19 +133,19 @@ const StyledServiceItem = styled.div`
         white-space: pre-line;
         margin-top: 20px;
     }
+
+    @media screen and (max-width: 1224px) {
+
+    }
+
+    @media screen and (max-width: 1024px) {
+        .service-box {
+            flex-direction: column;
+        }
+    }
+
+    
 `
 
-const StyledServiceBox = styled.div`
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    margin-top: 82px;
-    gap: 56px;
-`
-
-const StyledCoreServices = styled.div`
-    margin-top: 127px;
-    padding: 0 150px;
-`
 
 export default CoreServices

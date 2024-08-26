@@ -1,8 +1,8 @@
 import React from 'react'
-import TitleAndDes from '../components/TitleAndDes'
+import TitleAndDes from '../../components/TitleAndDes'
 import styled from 'styled-components'
-import { asset } from '../assets/assets'
-import PinkButton from '../components/PinkButton'
+import { asset } from '../../assets/assets'
+import PinkButton from '../../components/PinkButton'
 
 const aboutData = {
     titleAndDes : {
@@ -78,7 +78,7 @@ const StyledAbout = styled.div`
     }
 
     .button .pink-button {
-        transform: translate(0, 0)
+        transform: translate(0, 0);
     }
 
     .watch {
@@ -105,6 +105,77 @@ const StyledAbout = styled.div`
 
     .about__pic img {
         width: 476px;
+    }
+
+    @media screen and (max-width: 1024px) {
+        padding: 0;
+        justify-content: center;
+        width: 100vw;
+
+        .about__cover {
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .title-and-des p {
+            text-align: center;
+        }
+
+        .title-and-des h3 {
+            text-align: center;
+            width: 100%;
+        }
+
+        .title-and-des h1 {
+            text-align: center;
+        }       
+
+        .button {
+            align-items: center;
+            margin-top: 54px;
+            justify-content: center;
+            gap: 38.5px;
+        }
+
+        .about__pic {
+            margin-top: 60px;
+            transform: translate(0, 0);
+        }
+
+        .about__pic img {
+            width: 100%;
+        }
+    }
+
+    @media only screen and (max-width: 1224px) {
+        padding: 0 80px;
+        
+        .about__pic {
+            margin-top: 60px;
+            margin-left: 40px;
+            transform: translate(0, 0);
+        }
+    }
+
+    @media screen and (max-width: 700px) {
+        padding: 0 20px;
+
+        .about__pic img {
+            width: 100%;
+        }
+
+        .about__pic {
+            margin-left: 0;
+        }
+
+        .button {
+            flex-direction: column;
+            gap: 30px;
+        }
+
+        .title-and-des p {
+            white-space: unset;
+        }
     }
 `
 

@@ -12,6 +12,16 @@ import service2 from './service2.png';
 import service3 from './service3.png';
 import introBG from './introBG.png'
 import aboutPic from './about-pic.png'
+import fb from './fb.png'
+import ig from "./ig.png"
+import twt from "./twt.png"
+import footerBg from "./footer-bg.png"
+import bottomBg from "./BottomBG.png"
+import footerFb from "./footer-fb-icon.png"
+import footerIg from "./footer-ig-icon.png"
+import footerTwt from "./footer-twiiter-icon.png"
+import footerYtb from "./footer-ytb-icon.png"
+import footerIn from "./footer-in.png"
 
 export const asset = {
     mainLogo,
@@ -27,5 +37,15 @@ export const asset = {
     bubbleBg2,
     contactPic,
     introBG,
-    aboutPic
+    aboutPic,
+    fb,
+    ig,
+    twt,
+    footerBg,
+    footerFb,
+    footerIg,
+    footerIn,
+    footerTwt,
+    footerYtb,
+    bottomBg,
 }

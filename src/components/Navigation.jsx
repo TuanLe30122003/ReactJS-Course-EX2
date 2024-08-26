@@ -4,14 +4,13 @@ import PinkButton from './PinkButton'
 
 const Navigation = () => {
     return (
-        <StyledNavigation>
+        <StyledNavigation className='nav'>
             <ul className='main-menu'>
                 <li><a href="">Home</a><i class="fa-solid fa-plus"></i></li>
                 <li><a href="">About</a></li>
                 <li><a href="">Service</a></li>
                 <li><a href="">Gallery</a></li>
                 <li><a href="">Blog</a></li>
-                <li id="exit"><a href=""><i class="fa-solid fa-circle-xmark"></i></a></li>
             </ul>
 
             <PinkButton buttonName='Contact' width="158px" height="52px"/>
@@ -27,7 +26,7 @@ const StyledNavigation = styled.div`
     .main-menu {
         display: flex;
         flex-direction: row;
-        margin-left: -100px;
+        margin-left: 30px;
         gap: 44px;
         margin-right: 52px;
     }
@@ -62,7 +61,7 @@ const StyledNavigation = styled.div`
         font-size: 12px;
     }
 
-    #exit {
+    @media screen and (max-width: 1024px) {
         display: none;
     }
 
