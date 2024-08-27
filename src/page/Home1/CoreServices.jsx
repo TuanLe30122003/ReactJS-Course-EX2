@@ -79,7 +79,7 @@ const StyledServiceBox = styled.div`
   gap: 56px;
   z-index: 1;
 
-  @media screen and (max-width: 1024px) {
+  @media screen and (max-width: 1224px) {
     flex-direction: column;
   }
 `;

@@ -209,7 +209,9 @@ const StyledExpert = styled.div`
     transform: translate(0, 4px);
   }
 
-  .expert-section > div:nth-child(2) @media screen and (max-width: 1224px) {
+  .expert-section > div:nth-child(2) {
+  }
+  @media screen and (max-width: 1224px) {
     .expert-section {
       flex-direction: row;
       gap: 0;

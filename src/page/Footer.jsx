@@ -103,6 +103,7 @@ const Footer = () => {
 const StyledFooter = styled.div`
   margin-top: 300px;
   position: relative;
+  width: 100%;
 
   .bg-footer {
     position: absolute;
@@ -255,7 +256,6 @@ const StyledFooter = styled.div`
     display: flex;
     flex-direction: row;
     color: #fff;
-    justify-content: space-between;
     margin-top: 165px;
   }
 

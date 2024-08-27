@@ -27,6 +27,10 @@ import heroBg from "./hero-bg.png";
 import heroBlur from "./hero-blur.png";
 import playTrans from "./play-trans.png";
 import about2Pic from "./about2-pic.png";
+import service21 from "./service2.1.png";
+import service22 from "./service2.2.png";
+import service23 from "./service2.3.png";
+import wave from "./wave.png";
 
 export const asset = {
   mainLogo,
@@ -58,4 +62,8 @@ export const asset = {
   heroBlur,
   playTrans,
   about2Pic,
+  service23,
+  service21,
+  service22,
+  wave,
 };

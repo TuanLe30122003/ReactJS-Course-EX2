@@ -135,7 +135,11 @@ const StyledIntro = styled.div`
 
     .intro__bg img {
       width: 100%;
-      display: none;
+      // display: none;
+    }
+
+    .intro__pic img {
+      transform: translate(0, 0);
     }
   }
 
@@ -145,7 +149,7 @@ const StyledIntro = styled.div`
     margin-top: 30px;
 
     .intro__bg {
-      display: none;
+      // display: none;
     }
 
     .intro__pic img {

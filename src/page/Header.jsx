@@ -59,6 +59,7 @@ const Header = (props) => {
 
 const StyledHeader = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
@@ -91,6 +92,11 @@ const StyledHeader = styled.div`
   }
 
   @media only screen and (max-width: 1224px) {
+    .header {
+      margin-left: 30px;
+      width: 100%;
+      gap: 20px;
+    }
   }
 
   @media only screen and (max-width: 1024px) {

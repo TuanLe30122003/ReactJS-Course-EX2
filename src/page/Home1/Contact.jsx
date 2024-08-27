@@ -86,6 +86,10 @@ const StyledContact = styled.div`
     top: -210px;
   }
 
+  .contact-bubble img {
+    width: 100%;
+  }
+
   .title-and-des {
     margin-bottom: 50px;
     transform: translate(2px, 0);
