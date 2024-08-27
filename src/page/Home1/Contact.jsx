@@ -9,6 +9,10 @@ const Contact = (props) => {
   const { register, handleSubmit } = useForm();
   return (
     <StyledContact>
+      <div className="contact-bubble">
+        <img src={asset.bubbleBg2} alt="" />
+      </div>
+
       <div className="contact-pic">
         <img src={asset.contactPic} alt="" />
       </div>
@@ -74,6 +78,13 @@ const StyledContact = styled.div`
   padding: 0 150px;
   gap: 100px;
   margin-top: 150px;
+  position: relative;
+
+  .contact-bubble {
+    position: absolute;
+    left: 0;
+    top: -210px;
+  }
 
   .title-and-des {
     margin-bottom: 50px;
