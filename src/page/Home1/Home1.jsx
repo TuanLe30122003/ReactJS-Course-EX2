@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Header from "../Header.jsx"
+import Hero from "./Hero.jsx"
 import CoreServices from './CoreServices.jsx'
 import About from './About.jsx'
 import Contact from "./Contact.jsx"
@@ -10,7 +10,7 @@ import Expert from "./Expert.jsx"
 const Home1 = () => {
   return (
       <Cover>
-        <Header />
+        <Hero />
         <CoreServices />
         <About />
         <Expert />
