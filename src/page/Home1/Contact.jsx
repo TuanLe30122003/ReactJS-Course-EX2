@@ -93,7 +93,7 @@ const StyledContact = styled.div`
   }
 
   .contact-pic {
-    transform: translate(7px, 160px);
+    transform: translate(5px, 160px);
   }
 
   .contact-pic img {
@@ -126,6 +126,14 @@ const StyledContact = styled.div`
 
   .form input::placeholder {
     letter-spacing: 0.1em !important;
+  }
+
+  .form input:nth-child(2) {
+    transform: translate(-3px, -2px);
+  }
+
+  .form input:nth-child(1) {
+    transform: translate(1px, -2px);
   }
 
   .form textarea {

@@ -146,6 +146,7 @@ const StyledAbout = styled.div`
 
     .title-and-des h1 {
       text-align: center;
+      width: 100%;
     }
 
     .button {

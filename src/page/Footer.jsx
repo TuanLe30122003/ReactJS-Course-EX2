@@ -401,6 +401,7 @@ const StyledFooter = styled.div`
     }
 
     .social {
+      justify-content: center;
     }
 
     .contact-and-credit p {
@@ -445,10 +446,6 @@ const StyledFooter = styled.div`
   }
 
   @media only screen and (max-width: 450px) {
-    .social {
-      justify-content: center;
-    }
-
     .footer {
       margin-top: 0;
     }
