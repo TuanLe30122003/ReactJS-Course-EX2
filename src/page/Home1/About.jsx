@@ -60,7 +60,7 @@ const StyledAbout = styled.div`
   margin-top: 134.34px;
   display: flex;
   align-items: center;
-  padding: 0 150px;
+  justify-content: center;
   position: relative;
 
   .about-bubble {
@@ -73,6 +73,7 @@ const StyledAbout = styled.div`
   .about__cover {
     display: flex;
     flex-direction: row;
+    transform: translate(-68px);
   }
 
   .title-and-des p {
@@ -167,12 +168,14 @@ const StyledAbout = styled.div`
   }
 
   @media only screen and (max-width: 1224px) {
-    padding: 0 80px;
+    transform: translate(0);
 
     .about__pic {
-      margin-top: 60px;
-      margin-left: 40px;
-      transform: translate(0, 0);
+      transform: translate(50px, 30px);
+    }
+
+    .about__cover {
+      transform: translate(0);
     }
   }
 
@@ -185,6 +188,7 @@ const StyledAbout = styled.div`
 
     .about__pic {
       margin-left: 0;
+      transform: translate(0, 0);
     }
 
     .button {

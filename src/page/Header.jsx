@@ -59,12 +59,12 @@ const Header = (props) => {
 
 const StyledHeader = styled.div`
   display: flex;
-  width: 100%;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   position: relative;
   z-index: 9;
+  width: 100%;
 
   .y-nav-cover {
     display: none;
@@ -74,12 +74,14 @@ const StyledHeader = styled.div`
   }
 
   .header {
+    width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content: center;
     padding: 3rem 0;
-    margin-left: 161px;
     align-items: center;
     margin-top: -7px;
+    transform: translate(5px, 0);
   }
 
   #exit {
@@ -93,7 +95,6 @@ const StyledHeader = styled.div`
 
   @media only screen and (max-width: 1224px) {
     .header {
-      margin-left: 30px;
       width: 100%;
       gap: 20px;
     }
@@ -107,6 +108,7 @@ const StyledHeader = styled.div`
       margin-left: 0;
       justify-content: space-between;
       padding: 3rem 40px;
+      transform: translate(0, 0);
     }
 
     .y-nav-cover {

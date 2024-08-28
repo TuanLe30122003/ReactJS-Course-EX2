@@ -31,6 +31,11 @@ import service21 from "./service2.1.png";
 import service22 from "./service2.2.png";
 import service23 from "./service2.3.png";
 import wave from "./wave.png";
+import bannerH2 from "./banner-h2.png";
+import handshake from "./handshakeSymbol.png";
+import brotherhood from "./brotherhoodSymbol.png";
+import earth from "./earthSymbol.png";
+import doctor from "./doctorSymbol.png";
 
 export const asset = {
   mainLogo,
@@ -66,4 +71,9 @@ export const asset = {
   service21,
   service22,
   wave,
+  bannerH2,
+  handshake,
+  doctor,
+  brotherhood,
+  earth,
 };

@@ -103,14 +103,29 @@ const Footer = () => {
 const StyledFooter = styled.div`
   margin-top: 300px;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   width: 100%;
 
   .bg-footer {
     position: absolute;
-    top: -234px;
+    top: 0;
     left: 0;
     width: 100vw;
     z-index: -1;
+    background-color: #0d165c;
+    height: 100%;
+  }
+
+  .bg-footer img {
+    width: 100%;
+    position: absolute;
+    top: -234px;
+  }
+
+  .bot-bg img {
+    width: 100%;
   }
 
   .bot-bg {
@@ -129,13 +144,13 @@ const StyledFooter = styled.div`
     display: flex;
     flex-direction: row;
     color: #d7dbff;
-    /* justify-content: center; */
+    justify-content: center;
     /* align-items: center; */
-    padding: 0 150px;
+    gap: 200px;
   }
 
   .footer__main .logo-and-info {
-    transform: translateY(10px);
+    transform: translate(0, 10px);
   }
 
   .footer__main .logo-and-info h3 {
@@ -180,15 +195,15 @@ const StyledFooter = styled.div`
   .option-box {
     display: flex;
     flex-direction: row;
+    gap: 210px;
   }
 
   .pages {
-    /* margin-right: 203px; */
-    transform: translate(186px, -5.5px);
+    transform: translate(-12px, -5.5px);
   }
 
   .information {
-    transform: translate(394px, -6.5px);
+    transform: translate(-15px, -6.5px);
   }
 
   .pages h3 {
@@ -252,9 +267,12 @@ const StyledFooter = styled.div`
   }
 
   .contact-and-credit {
-    margin-left: 150px;
+    width: 100%;
+
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    gap: 425px;
     color: #fff;
     margin-top: 165px;
   }
@@ -263,7 +281,6 @@ const StyledFooter = styled.div`
     display: flex;
     flex-direction: row;
     gap: 45px;
-    margin-right: 424px;
   }
 
   .contact-and-credit i {
@@ -284,12 +301,27 @@ const StyledFooter = styled.div`
     text-align: right;
   }
 
+  @media only screen and (max-width: 1360px) {
+    .contact-and-credit {
+      margin-top: 120px;
+    }
+  }
+
+  @media only screen and (max-width: 1290px) {
+    .contact-and-credit {
+      margin-top: 80px;
+    }
+  }
   @media only screen and (max-width: 1224px) {
     background-color: #091156;
     margin-top: 100px;
     justify-content: center;
     padding: 50px 0;
     width: 100vw;
+
+    .option-box {
+      gap: 0px;
+    }
 
     .bg-footer {
       display: none;
@@ -328,8 +360,7 @@ const StyledFooter = styled.div`
 
     .contact-and-credit {
       margin-top: 100px;
-      margin-left: 160px;
-      justify-content: flex-start;
+      gap: 150px;
     }
 
     .social {
@@ -345,7 +376,8 @@ const StyledFooter = styled.div`
 
     .contact-and-credit {
       margin-top: 40px;
-      justify-content: flex-start;
+      justify-content: center;
+      align-items: center;
       flex-direction: column;
       gap: 30px;
     }

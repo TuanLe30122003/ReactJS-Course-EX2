@@ -200,8 +200,7 @@ const StyledExpert = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0 177px;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 60px;
   }
 
@@ -211,7 +210,7 @@ const StyledExpert = styled.div`
 
   .expert-section > div:nth-child(2) {
   }
-  @media screen and (max-width: 1224px) {
+  @media screen and (max-width: 1280px) {
     .expert-section {
       flex-direction: row;
       gap: 0;

@@ -75,7 +75,8 @@ const Contact = (props) => {
 const StyledContact = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 0 150px;
+  width: 100%;
+  justify-content: center;
   gap: 100px;
   margin-top: 150px;
   position: relative;

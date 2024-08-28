@@ -44,10 +44,10 @@ const Introduction = () => {
 
 const StyledIntro = styled.div`
   display: flex;
+  width: 100%;
   flex-direction: column;
   justify-content: center;
-  align-items: flex-start;
-  margin-left: 190px;
+  align-items: center;
   margin-top: 85px;
 
   .intro-cover {
@@ -131,8 +131,6 @@ const StyledIntro = styled.div`
   }
 
   @media screen and (max-width: 1224px) {
-    margin-left: 100px;
-
     .intro__bg img {
       width: 100%;
       // display: none;

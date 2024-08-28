@@ -86,7 +86,6 @@ const StyledServiceBox = styled.div`
 
 const StyledCoreServices = styled.div`
   margin-top: 127px;
-  padding: 0 150px;
   display: flex;
   flex-direction: column;
   align-items: center;
