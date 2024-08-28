@@ -92,10 +92,6 @@ const Footer = () => {
           <p>© AltDesain Studio 2021 - All right reserved.</p>
         </div>
       </div>
-
-      <a class="back-to-top" href="#">
-        <ion-icon name="arrow-up-outline"></ion-icon>
-      </a>
     </StyledFooter>
   );
 };
@@ -130,7 +126,7 @@ const StyledFooter = styled.div`
 
   .bot-bg {
     position: absolute;
-    bottom: -76px;
+    bottom: -90px;
     left: 0;
     z-index: -2;
     width: 100%;
@@ -304,12 +300,14 @@ const StyledFooter = styled.div`
   @media only screen and (max-width: 1360px) {
     .contact-and-credit {
       margin-top: 120px;
+      gap: 375px;
     }
   }
 
   @media only screen and (max-width: 1290px) {
     .contact-and-credit {
       margin-top: 80px;
+      gap: 325px;
     }
   }
   @media only screen and (max-width: 1224px) {
