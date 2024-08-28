@@ -91,6 +91,10 @@ const StyledCoreServices = styled.div`
   align-items: center;
   width: 100%;
 
+  .title-and-des h1 {
+    transform: translate(0, -1px);
+  }
+
   @media screen and (max-width: 1224px) {
     display: flex;
     flex-direction: column;

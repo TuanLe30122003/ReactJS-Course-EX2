@@ -63,6 +63,10 @@ const StyledAbout = styled.div`
   justify-content: center;
   position: relative;
 
+  .info {
+    transform: translate(2px, 0);
+  }
+
   .about-bubble {
     position: absolute;
     right: 0;
@@ -116,6 +120,7 @@ const StyledAbout = styled.div`
     letter-spacing: 0.1em;
     text-align: left;
     color: #8b8b8b;
+    transform: translate(-1px, -2px);
   }
 
   .watch ion-icon {

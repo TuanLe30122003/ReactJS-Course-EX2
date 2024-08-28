@@ -76,7 +76,7 @@ const StyledIntro = styled.div`
     text-align: left;
     color: #091156;
     margin-bottom: 10px;
-    transform: translate(-1px, 0);
+    transform: translate(1px, 0);
   }
 
   .introduction > p {
@@ -89,16 +89,16 @@ const StyledIntro = styled.div`
     color: #091156;
     margin-bottom: 30px;
     white-space: pre-line;
-    transform: translate(-1px, -2px);
+    transform: translate(1px, -2px);
   }
 
   .intro__pic img {
-    transform: translate(34px, 15px);
+    transform: translate(34.5px, 15px);
   }
 
   .pink-button {
     margin-top: 4px;
-    transform: translate(-1px, -2px);
+    transform: translate(1px, -2px);
   }
 
   .pink-button a {

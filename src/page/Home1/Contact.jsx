@@ -109,7 +109,7 @@ const StyledContact = styled.div`
   }
 
   .contact-pic {
-    transform: translate(5px, 160px);
+    transform: translate(6px, 156px);
   }
 
   .contact-pic img {
@@ -134,10 +134,12 @@ const StyledContact = styled.div`
     border-radius: 15px;
     height: 61.58px;
     letter-spacing: 0.1em;
+    max-width: 520px;
   }
 
   .full-width {
     grid-column: span 2;
+    max-width: 520px;
   }
 
   .form input::placeholder {
@@ -145,11 +147,14 @@ const StyledContact = styled.div`
   }
 
   .form input:nth-child(2) {
-    transform: translate(-3px, -2px);
+    transform: translate(-6px, -2px);
+    max-width: 242.21px;
+    padding-left: 27px;
   }
 
   .form input:nth-child(1) {
     transform: translate(1px, -2px);
+    max-width: 242.21px;
   }
 
   .form textarea {
@@ -159,7 +164,7 @@ const StyledContact = styled.div`
     border-radius: 15px;
     height: 240px;
     font-size: 16px;
-    padding-top: 28px;
+    padding-top: 26px;
     /* padding: 25px 100px 100px 24px; */
   }
 
