@@ -213,6 +213,17 @@ const StyledContact = styled.div`
 
     .title-and-des h1 {
       white-space: unset;
+      text-align: center;
+    }
+
+    .title-and-des h3 {
+      text-align: center;
+      width: 100%;
+    }
+
+    .title-and-des p {
+      text-align: center;
+      width: 100%;
     }
 
     contact-pic img {

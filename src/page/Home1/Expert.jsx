@@ -224,6 +224,30 @@ const StyledExpertItem = styled.div`
       height: 525px;
     }
   }
+
+  @media screen and (max-width: 450px) {
+    padding: 0;
+    width: 250px;
+
+    &:hover {
+      box-shadow: 0px 25px 50px 25px #f6f7ff;
+      width: 300px;
+      background-color: #ffffff;
+      height: 525px;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    padding: 0;
+    width: 200px;
+
+    &:hover {
+      box-shadow: 0px 25px 50px 25px #f6f7ff;
+      width: 260px;
+      background-color: #ffffff;
+      height: 525px;
+    }
+  }
 `;
 
 const StyledExpert = styled.div`
