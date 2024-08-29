@@ -181,7 +181,7 @@ const StyledContact = styled.div`
 
   @media only screen and (max-width: 1224px) {
     padding: 0;
-    margin-top: 0;
+    margin-top: 100px;
     flex-direction: column;
     width: 100%;
     gap: 0;
@@ -194,6 +194,11 @@ const StyledContact = styled.div`
 
     .contact-pic {
       transform: translate(6px, 0);
+      order: 2;
+    }
+
+    .contact-form {
+      order: 1;
     }
   }
 

@@ -524,6 +524,12 @@ const StyledFooter = styled.div`
       padding: 0 30px;
     }
   }
+
+  @media only screen and (max-width: 300px) {
+    .footer__main .logo-and-info > h3 {
+      width: 80%;
+    }
+  }
 `;
 
 export default Footer;
