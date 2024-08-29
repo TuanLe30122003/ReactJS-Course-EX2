@@ -376,6 +376,10 @@ const StyledFooter = styled.div`
       width: 100%;
     }
 
+    .logo-and-info img {
+      transform: translate(30px, 0);
+    }
+
     .contact-and-credit {
       margin-top: 40px;
       justify-content: center;

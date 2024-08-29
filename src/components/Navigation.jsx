@@ -58,11 +58,14 @@ const StyledNavigation = styled.div`
     color: #414880;
   }
 
-  .main-menu li:nth-child(2),
-  .main-menu li:nth-child(3),
-  .main-menu li:nth-child(4) {
-    transform: translate(-2px, 0);
+  .main-menu li:nth-child(3) {
+    transform: translate(-1px, 0);
   }
+
+  .main-menu li:nth-child(5) {
+    transform: translate(1.5px, 0);
+  }
+
   li {
     display: flex;
     flex-direction: row;
@@ -80,7 +83,7 @@ const StyledNavigation = styled.div`
   }
 
   .pink-button {
-    transform: translate(-1px, 0);
+    transform: translate(1px, 0);
   }
 
   li:nth-child(1) {

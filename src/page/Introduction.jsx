@@ -66,7 +66,7 @@ const StyledIntro = styled.div`
     top: 0;
     left: 0;
     z-index: -1;
-    width: 100%;
+    width: 88%;
   }
 
   .intro__bg img {
@@ -103,7 +103,7 @@ const StyledIntro = styled.div`
 
   .pink-button {
     margin-top: 4px;
-    transform: translate(1px, -2px);
+    transform: translate(2px, -2px);
   }
 
   .pink-button a {
