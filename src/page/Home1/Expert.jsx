@@ -62,9 +62,6 @@ const Expert = () => {
           position={expertData.expertInfo.expert2.position}
           name={expertData.expertInfo.expert2.name}
           des={expertData.expertInfo.expert2.des}
-          padding={"91px 0 0 0"}
-          width={"424px"}
-          height={"626px"}
         />
 
         <ExpertItem
@@ -114,10 +111,21 @@ const StyledExpertItem = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 110.11px;
+  justify-content: center;
+  margin: 110.11px 30px 0 30px;
+  transition: all 0.3s;
+  border-radius: 42px;
+  height: 626px;
+  padding: 56px 0;
+  z-index: 99;
+
   width: ${(props) => props.width || "270px"};
-  height: ${(props) => props.height || "439px"};
-  padding: ${(props) => props.padding || "0"};
+
+  &:hover {
+    box-shadow: 0px 25px 50px 25px #f6f7ff;
+    width: 424px;
+    background-color: #ffffff;
+  }
 
   .contact {
     display: flex;
@@ -133,6 +141,8 @@ const StyledExpertItem = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 50%;
+    box-shadow: -2px 6px 16px -1px #e6e9fd;
   }
 
   .pic {
@@ -174,9 +184,45 @@ const StyledExpertItem = styled.div`
     margin-top: 48px;
   }
 
+  @media screen and (max-width: 1224px) {
+    margin-top: 60px;
+    height: 524px;
+
+    &:hover {
+      box-shadow: 0px 25px 50px 25px #f6f7ff;
+      width: 424px;
+      background-color: #ffffff;
+      height: 625px;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 60px;
+    padding: 56px 0;
+    height: 484px;
+
+    &:hover {
+      box-shadow: 0px 25px 50px 25px #f6f7ff;
+      width: 424px;
+      background-color: #ffffff;
+      height: 525px;
+    }
+
+    .contact {
+      margin-top: 30px;
+    }
+  }
+
   @media screen and (max-width: 700px) {
     padding: 0;
     width: 250px;
+
+    &:hover {
+      box-shadow: 0px 25px 50px 25px #f6f7ff;
+      width: 384px;
+      background-color: #ffffff;
+      height: 525px;
+    }
   }
 `;
 
@@ -201,18 +247,11 @@ const StyledExpert = styled.div`
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    gap: 60px;
   }
 
-  .expert-section > div:nth-child(2) {
-    transform: translate(0, 4px);
-  }
-
-  .expert-section > div:nth-child(2) {
-  }
-  @media screen and (max-width: 1280px) {
+  @media screen and (max-width: 1224px) {
     .expert-section {
-      flex-direction: row;
+      flex-direction: column;
       gap: 0;
       padding: 0;
     }

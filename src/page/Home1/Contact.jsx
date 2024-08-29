@@ -139,7 +139,6 @@ const StyledContact = styled.div`
 
   .full-width {
     grid-column: span 2;
-    max-width: 520px;
   }
 
   .form input::placeholder {
@@ -182,11 +181,20 @@ const StyledContact = styled.div`
 
   @media only screen and (max-width: 1224px) {
     padding: 0;
+    margin-top: 0;
     flex-direction: column;
-    padding: 0;
     width: 100%;
+    gap: 0;
     justify-content: center;
     align-items: center;
+
+    .contact-bubble {
+      top: -160px;
+    }
+
+    .contact-pic {
+      transform: translate(6px, 0);
+    }
   }
 
   @media only screen and (max-width: 1024px) {
@@ -200,6 +208,7 @@ const StyledContact = styled.div`
 
     .form {
       grid-template-columns: 1fr;
+      justify-content: center;
     }
 
     .title-and-des h1 {
@@ -214,15 +223,37 @@ const StyledContact = styled.div`
       grid-column: span 1;
     }
 
+    .form input:nth-child(2) {
+      padding-left: 24px;
+      transform: translate(0, 0);
+      max-width: 430px;
+    }
+
+    .form input:nth-child(1) {
+      transform: translate(0, 0);
+      max-width: 430px;
+    }
+
     .grid-item {
+      width: 430px !important;
+      justify-self: center;
       padding: 17px 34px 17px 24px;
-      max-width: 350px;
+    }
+
+    .pink-button {
+      justify-self: center;
     }
   }
 
   @media screen and (max-width: 450px) {
     .grid-item {
-      max-width: 300px;
+      width: 350px !important;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    .grid-item {
+      width: 280px !important;
     }
   }
 `;

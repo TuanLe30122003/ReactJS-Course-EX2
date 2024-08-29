@@ -48,7 +48,7 @@ const StyledIntro = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 85px;
+  margin: 85px 0px 0 0px;
 
   .intro-cover {
     display: flex;
@@ -66,6 +66,11 @@ const StyledIntro = styled.div`
     top: 0;
     left: 0;
     z-index: -1;
+    width: 100%;
+  }
+
+  .intro__bg img {
+    width: 100%;
   }
 
   .introduction > h1 {
@@ -131,13 +136,21 @@ const StyledIntro = styled.div`
   }
 
   @media screen and (max-width: 1224px) {
+    margin: 85px 0 0 0px;
+    padding-left: 20px;
+
     .intro__bg img {
       width: 100%;
       // display: none;
     }
 
+    .intro__pic {
+      display: flex;
+      justify-content: center;
+    }
     .intro__pic img {
       transform: translate(0, 0);
+      width: 90%;
     }
   }
 
@@ -151,7 +164,7 @@ const StyledIntro = styled.div`
     }
 
     .intro__pic img {
-      width: 100%;
+      width: 90%;
     }
 
     .intro__pic img {
@@ -184,6 +197,10 @@ const StyledIntro = styled.div`
     .introduction > p {
       white-space: unset;
     }
+  }
+
+  @media screen and (max-width: 450px) {
+    margin: 85px 0px 0 0px;
   }
 `;
 

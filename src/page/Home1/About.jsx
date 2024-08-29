@@ -34,6 +34,10 @@ const About = () => {
             textAlign={"left"}
           />
 
+          <div className="res-pic">
+            <img src={aboutData.picture.url} alt="" />
+          </div>
+
           <div className="button">
             <PinkButton
               buttonName={"Learn More"}
@@ -88,6 +92,10 @@ const StyledAbout = styled.div`
     transform: translate(135px, 45px);
   }
 
+  .res-pic {
+    display: none;
+  }
+
   .button {
     display: flex;
     flex-direction: row;
@@ -131,6 +139,25 @@ const StyledAbout = styled.div`
     width: 476px;
   }
 
+  @media only screen and (max-width: 1224px) {
+    transform: translate(0);
+
+    .about__pic {
+      transform: translate(20px, 30px);
+      justify-content: center;
+      align-items: center;
+      display: flex;
+    }
+
+    .about__pic img {
+      width: 90%;
+    }
+
+    .about__cover {
+      transform: translate(0);
+    }
+  }
+
   @media screen and (max-width: 1024px) {
     padding: 0;
     justify-content: center;
@@ -163,24 +190,25 @@ const StyledAbout = styled.div`
     }
 
     .about__pic {
+      display: none;
       margin-top: 60px;
       transform: translate(0, 0);
     }
 
-    .about__pic img {
+    .res-pic {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+    .res-pic img {
       width: 100%;
     }
-  }
 
-  @media only screen and (max-width: 1224px) {
-    transform: translate(0);
-
-    .about__pic {
-      transform: translate(50px, 30px);
-    }
-
-    .about__cover {
-      transform: translate(0);
+    .about__pic img {
+      width: 100%;
     }
   }
 
@@ -188,11 +216,12 @@ const StyledAbout = styled.div`
     padding: 0 20px;
 
     .about__pic img {
-      width: 100%;
+      width: 80%;
     }
 
     .about__pic {
       margin-left: 0;
+      display: none;
       transform: translate(0, 0);
     }
 

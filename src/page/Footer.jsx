@@ -108,7 +108,8 @@ const StyledFooter = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    right: 0;
+    width: 100%;
     z-index: -1;
     background-color: #0d165c;
     height: 100%;
@@ -368,8 +369,11 @@ const StyledFooter = styled.div`
 
   @media only screen and (max-width: 1024px) {
     .option-box {
-      flex-direction: column;
-      gap: 60px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      flex-direction: row;
+      justify-content: space-between;
+      width: 100%;
     }
 
     .contact-and-credit {
@@ -389,7 +393,8 @@ const StyledFooter = styled.div`
     }
 
     .footer__main {
-      align-items: center;
+      flex-direction: column;
+      // align-items: center;
       gap: 30px;
     }
 
@@ -468,10 +473,13 @@ const StyledFooter = styled.div`
     .pages {
       transform: translate(0);
       margin-left: 0;
+      margin-right: 0;
     }
 
     .option-box {
       margin-left: 30px;
+      justify-content: space-between;
+      gap: 30px;
     }
   }
 
@@ -490,10 +498,13 @@ const StyledFooter = styled.div`
 
     .option-box {
       margin-left: 30px;
+      flex-direction: column;
+      width: auto;
     }
 
     .pages {
       margin-left: 0;
+      margin-bottom: 20px;
     }
 
     .information {

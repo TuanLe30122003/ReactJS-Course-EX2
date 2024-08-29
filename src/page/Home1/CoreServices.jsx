@@ -63,7 +63,7 @@ const CoreServices = () => {
 
 const ServiceItem = (props) => {
   return (
-    <StyledServiceItem>
+    <StyledServiceItem className="ser-item">
       <img src={props.image} alt="" />
       <h3>{props.serviceName}</h3>
       <p>{props.serviceDes}</p>
@@ -78,6 +78,7 @@ const StyledServiceBox = styled.div`
   margin-top: 82px;
   gap: 56px;
   z-index: 1;
+  flex-wrap: wrap;
 
   @media screen and (max-width: 1224px) {
     flex-direction: column;
@@ -151,9 +152,12 @@ const StyledServiceItem = styled.div`
   }
 
   @media screen and (max-width: 1024px) {
-    .service-box {
-      flex-direction: column;
-    }
+  }
+
+  @media screen and (max-width: 350px) {
+    width: 300px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 `;
 

@@ -6,7 +6,7 @@ const Navigation = () => {
   return (
     <StyledNavigation className="nav">
       <ul className="main-menu">
-        <li>
+        <li id="home">
           <a href="">Home</a>
           <i class="fa-solid fa-plus"></i>
         </li>
@@ -42,18 +42,20 @@ const StyledNavigation = styled.div`
     margin-right: 52px;
   }
 
-  .main-menu li:nth-child(1) {
+  #home a {
     font-family: Poppins;
     font-size: 16px;
     font-weight: 600;
     line-height: 24px;
     letter-spacing: 0.1em;
     text-align: left;
+    color: #414880;
   }
 
-  .main-menu li:nth-child(1) i {
+  #home i {
     font-size: 9px;
     transform: translate(-1px, 1px);
+    color: #414880;
   }
 
   .main-menu li:nth-child(2),
