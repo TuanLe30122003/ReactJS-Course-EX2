@@ -243,6 +243,18 @@ const StyledExpertItem = styled.div`
 
     &:hover {
       box-shadow: 0px 25px 50px 25px #f6f7ff;
+      width: 320px;
+      background-color: #ffffff;
+      height: 525px;
+    }
+  }
+
+  @media screen and (max-width: 350px) {
+    padding: 0;
+    width: 200px;
+
+    &:hover {
+      box-shadow: 0px 25px 50px 25px #f6f7ff;
       width: 260px;
       background-color: #ffffff;
       height: 525px;
