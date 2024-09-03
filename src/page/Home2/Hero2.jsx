@@ -7,7 +7,7 @@ import { asset } from "../../assets/assets";
 const Hero2 = () => {
   return (
     <StyledHero2>
-      <Header whiteText={true} />
+      <Header whiteText={true} sectionColor={"#fff"} />
 
       <div className="hero__bg">
         <img src={asset.heroBg} alt="" />
@@ -30,7 +30,12 @@ const Hero2 = () => {
 
         <div className="hero-play">
           <div className="circle">
-            <img src={asset.circleTrans} alt="" />
+            <div>
+              <img src={asset.circleTrans} alt="" />
+            </div>
+            <div>
+              <img src={asset.playTrans} alt="" />
+            </div>
           </div>
 
           <p>Tour Video</p>
@@ -45,26 +50,56 @@ const StyledHero2 = styled.div`
   flex-direction: column;
   justify-content: center;
   position: relative;
+  width: 100%;
 
   .hero__bg {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     z-index: -2;
+  }
+
+  .hero__bg img {
+    width: 100%;
+    min-height: 900px;
+    object-fit: cover;
+    max-height: 918px;
+  }
+
+  .circle {
+    position: relative;
+  }
+
+  .circle > div {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .blur img {
+    width: 100%;
+    min-height: 900px;
+    object-fit: cover;
+    max-height: 918px;
   }
 
   .blur {
     position: absolute;
     top: 0;
     left: 0;
+    right: 0;
     z-index: -1;
   }
 
   .hero-main {
     display: flex;
     flex-direction: row;
-    margin-left: 150px;
+    justify-content: center;
     margin-top: 155px;
+    width: 100%;
+    transform: translate(-155px, 0);
   }
 
   .hero-title-section {
@@ -116,6 +151,7 @@ const StyledHero2 = styled.div`
     flex-direction: row;
     align-items: center;
     gap: 27px;
+    transform: translate(83px, 2px);
   }
 
   .hero-play p {
@@ -126,6 +162,53 @@ const StyledHero2 = styled.div`
     letter-spacing: 0.1em;
     text-align: left;
     color: #ffffff;
+    transform: translate(83px, 0);
+  }
+
+  @media screen and (max-width: 1224px) {
+    .hero-main {
+      transform: translate(0, 0);
+    }
+
+    .hero-play {
+      transform: translate(-100px, 0);
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    .hero-main {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 80px;
+      gap: 60px;
+    }
+    .hero-title-section h1 {
+      text-align: center;
+      white-space: unset;
+    }
+
+    .hero-title-section p {
+      white-space: unset;
+      text-align: center;
+      width: 70%;
+    }
+
+    .hero-title-section {
+      justify-content: center;
+      margin-right: 0;
+      align-items: center;
+    }
+
+    .hero-play {
+      transform: translate(0, 60px);
+    }
+  }
+
+  @media screen and (max-width: 450px) {
+    .hero-play p {
+      display: none;
+    }
   }
 `;
 

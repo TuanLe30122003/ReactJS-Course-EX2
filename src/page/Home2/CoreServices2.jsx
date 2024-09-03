@@ -102,7 +102,7 @@ const StyledCoreServices2 = styled.div`
   width: 100%;
   margin-top: 162px;
   align-items: center;
-  padding: 0 262px;
+  justify-content: center;
   position: relative;
 
   .wave {
@@ -110,6 +110,10 @@ const StyledCoreServices2 = styled.div`
     left: 0;
     z-index: -2;
     bottom: -190px;
+  }
+
+  .wave img {
+    width: 100%;
   }
 
   .title-and-des h1 {
@@ -121,10 +125,26 @@ const StyledCoreServices2 = styled.div`
     margin-top: 78px;
     flex-direction: row;
     gap: 66px;
+    justify-content: center;
   }
 
   .service-box > div:nth-child(2) {
     border: 1px solid #9ba2e0;
+  }
+
+  @media screen and (max-width: 1224px) {
+    p {
+      white-space: unset;
+    }
+
+    .service-box {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  @media screen and (max-width: 1024px) {
+  }
+  @media screen and (max-width: 700px) {
   }
 `;
 

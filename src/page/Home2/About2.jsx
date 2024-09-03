@@ -37,7 +37,12 @@ const StyledAbout2 = styled.div`
   .about__cover {
     display: flex;
     flex-direction: row;
-    margin-left: 150px;
+    justify-content: center;
+    transform: translate(-13px, 0);
+  }
+
+  .about__pic {
+    transform: translate(0, 4px);
   }
 
   .about__title {
@@ -48,6 +53,63 @@ const StyledAbout2 = styled.div`
   .about__title p {
     margin-top: 0;
     margin-bottom: 47px;
+  }
+
+  @media screen and (max-width: 1224px) {
+    margin-top: 400px;
+
+    .about__cover {
+      flex-direction: column;
+      gap: 60px;
+      transform: translate(0, 0);
+    }
+
+    .about__title {
+      margin-left: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      order: 1;
+      flex-direction: column;
+    }
+
+    .about__pic {
+      display: flex;
+      justify-content: center;
+      order: 2;
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+  }
+
+  @media screen and (max-width: 700px) {
+    margin-top: 3 00px;
+
+    .about__title {
+      margin: 0 30px;
+    }
+
+    .about__pic img {
+      width: 80%;
+    }
+
+    .about__title .title-and-des p {
+      text-align: center;
+    }
+
+    .about__title .title-and-des h3 {
+      text-align: center;
+      width: 100%;
+    }
+
+    .about__title .title-and-des h1 {
+      text-align: center;
+      width: 100%;
+    }
+  }
+
+  @media screen and (max-width: 450px) {
   }
 `;
 

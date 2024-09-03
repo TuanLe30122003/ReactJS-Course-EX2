@@ -2,9 +2,9 @@ import React from "react";
 import styled from "styled-components";
 import PinkButton from "./PinkButton";
 
-const Navigation = () => {
+const Navigation = (props) => {
   return (
-    <StyledNavigation className="nav">
+    <StyledNavigation className="nav" sectionColor={props.sectionColor}>
       <ul className="main-menu">
         <li id="home">
           <a href="">Home</a>
@@ -79,7 +79,7 @@ const StyledNavigation = styled.div`
     line-height: 24px;
     letter-spacing: 1.75px;
     cursor: pointer;
-    color: #000;
+    color: ${(props) => props.sectionColor || "#000"};
   }
 
   .pink-button {

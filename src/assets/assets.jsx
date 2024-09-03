@@ -36,6 +36,12 @@ import handshake from "./handshakeSymbol.png";
 import brotherhood from "./brotherhoodSymbol.png";
 import earth from "./earthSymbol.png";
 import doctor from "./doctorSymbol.png";
+import overlayh2 from "./banneroverlay-h2.png";
+import blog1 from "./blog1.png";
+import blog2 from "./blog2.png";
+import blog3 from "./blog3.png";
+import blogWave from "./blog-wave.png";
+import phoneIcon from "./phoneIcon.png";
 
 export const asset = {
   mainLogo,
@@ -76,4 +82,10 @@ export const asset = {
   doctor,
   brotherhood,
   earth,
+  overlayh2,
+  blog1,
+  blog2,
+  blog3,
+  blogWave,
+  phoneIcon,
 };

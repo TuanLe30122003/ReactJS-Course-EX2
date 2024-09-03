@@ -15,7 +15,7 @@ const Header = (props) => {
     <StyledHeader>
       <div className="header">
         <MainLogo whiteText={props.whiteText || false} />
-        <Navigation />
+        <Navigation sectionColor={props.sectionColor} />
         <div className="menu" onClick={() => toggleMenu()}>
           <ion-icon name="menu-outline"></ion-icon>
         </div>
