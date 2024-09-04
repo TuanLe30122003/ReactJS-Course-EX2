@@ -42,6 +42,18 @@ import blog2 from "./blog2.png";
 import blog3 from "./blog3.png";
 import blogWave from "./blog-wave.png";
 import phoneIcon from "./phoneIcon.png";
+import videoPic from "./videopicture.png";
+import videoPlayBtn from "./videoPlayBtn.png";
+import videoBubble from "./videopBubble.png";
+import sloganPic from "./sloganPic.png";
+import sloganBlur from "./sloganBlur.png";
+import mission from "./missionPic.png";
+import vision from "./visionPic.png";
+import client1 from "./client1.png";
+import client2 from "./client2.png";
+import client3 from "./client3.png";
+import client4 from "./client4.png";
+import client5 from "./client5.png";
 
 export const asset = {
   mainLogo,
@@ -88,4 +100,16 @@ export const asset = {
   blog3,
   blogWave,
   phoneIcon,
+  videoPic,
+  videoPlayBtn,
+  videoBubble,
+  sloganBlur,
+  sloganPic,
+  mission,
+  vision,
+  client1,
+  client2,
+  client3,
+  client4,
+  client5,
 };

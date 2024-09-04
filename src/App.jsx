@@ -2,6 +2,7 @@ import styled from "styled-components";
 import Home1 from "./page/Home1/Home1";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home2 from "./page/Home2/Home2";
+import AboutPage from "./page/About/AboutPage";
 
 function App() {
   return (
@@ -9,10 +10,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home1 />} />
         <Route path="/home2" element={<Home2 />} />
+        <Route path="/about" element={<AboutPage />} />
       </Routes>
     </BrowserRouter>
   );
 }
-
 
 export default App;

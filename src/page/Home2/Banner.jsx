@@ -89,6 +89,7 @@ const StyledNumberItem = styled.div`
     line-height: 20px;
     text-align: left;
     color: #d8dcff;
+    width: 130px;
   }
 
   .info {
@@ -148,7 +149,7 @@ const StyledBanner = styled.div`
   }
 
   .banner__title {
-    transform: translate(0, 0);
+    transform: translate(-15px, 10px);
     display: flex;
     justify-content: center;
     flex-shrink: 0;
@@ -183,18 +184,26 @@ const StyledBanner = styled.div`
     justify-content: center;
     gap: 45px;
     flex-basis: 60%;
-    transform: translate(-42px, 35px);
+    transform: translate(-25px, 15px);
   }
 
   .number-box2 {
     display: flex;
     width: 100%;
     flex-direction: row;
-    gap: 100px;
+    gap: 60px;
   }
 
   .number-box2:nth-child(1) .number-item:nth-child(1) p {
     transform: translate(-0.5px, -3px);
+  }
+
+  .number-box2:nth-child(1) .number-item:nth-child(2) {
+    transform: translate(5px, 0);
+  }
+
+  .number-box2:nth-child(2) .number-item:nth-child(2) {
+    transform: translate(5px, 0);
   }
 
   .number-box2:nth-child(1) .number-item:nth-child(2) img {
