@@ -40,12 +40,12 @@ const expertData = {
   },
 };
 
-const Expert = () => {
+const Expert = (props) => {
   return (
-    <StyledExpert>
+    <StyledExpert className="expert">
       <TitleAndDes
-        subTitle={expertData.TitleAndDes.subTitle}
-        title={expertData.TitleAndDes.title}
+        subTitle={props.subTitle || expertData.TitleAndDes.subTitle}
+        title={props.title || expertData.TitleAndDes.title}
         des={expertData.TitleAndDes.des}
         alignItems={"center"}
       />

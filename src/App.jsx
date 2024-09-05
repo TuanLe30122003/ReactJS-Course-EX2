@@ -3,8 +3,9 @@ import Home1 from "./page/Home1/Home1";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home2 from "./page/Home2/Home2";
 import AboutPage from "./page/About/AboutPage";
-import Service from "./page/Service/Service";
 import Gallery from "./page/Gallery/Gallery";
+import Service from "./page/Service/Service";
+import Team from "./page/Team/Team";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         <Route path="/about" element={<AboutPage />} />
         <Route path="/service" element={<Service />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/team" element={<Team />} />
       </Routes>
     </BrowserRouter>
   );

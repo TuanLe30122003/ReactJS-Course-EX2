@@ -76,6 +76,14 @@ import gal8 from "./gal8.png";
 import gal9 from "./gal9.png";
 import galBg from "./gal-banner-bg.png";
 import galBlur from "./gal-banner-blur.png";
+import assist1 from "./assist1.png";
+import assist2 from "./assist2.png";
+import assist3 from "./assist3.png";
+import banner4bg from "./banner4bg.png";
+import banner4blur from "./banner4blur.png";
+import sliderbg from "./sliderbg.png";
+import cusAvt from "./cus-avt.png";
+import star from "./star.png";
 
 export const asset = {
   mainLogo,
@@ -156,4 +164,12 @@ export const asset = {
   gal9,
   galBg,
   galBlur,
+  assist1,
+  assist2,
+  assist3,
+  banner4bg,
+  banner4blur,
+  sliderbg,
+  cusAvt,
+  star,
 };

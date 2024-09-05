@@ -48,6 +48,7 @@ const StyledBanner2 = styled.div`
 
   .main-bg img {
     width: 100%;
+    object-fit: cover;
   }
 
   .blur {
@@ -59,6 +60,7 @@ const StyledBanner2 = styled.div`
   }
 
   .blur img {
+    object-fit: cover;
     width: 100%;
   }
 
