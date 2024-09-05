@@ -54,6 +54,17 @@ import client2 from "./client2.png";
 import client3 from "./client3.png";
 import client4 from "./client4.png";
 import client5 from "./client5.png";
+import service2bubble from "./service2bubble.png";
+import service31 from "./service3.1.png";
+import service32 from "./service3.2.png";
+import service33 from "./service3.3.png";
+import service34 from "./service3.4.png";
+import servicedes1 from "./servicedes.png";
+import servicedes2 from "./servicedes2.png";
+import servicedes3 from "./servicedes3.png";
+import banner2bg from "./responBG.png";
+import banner2blur from "./responBlur.png";
+import arrow from "./arrow-flip.png";
 
 export const asset = {
   mainLogo,
@@ -112,4 +123,15 @@ export const asset = {
   client3,
   client4,
   client5,
+  service2bubble,
+  service31,
+  service32,
+  service33,
+  service34,
+  servicedes1,
+  servicedes2,
+  servicedes3,
+  banner2bg,
+  banner2blur,
+  arrow,
 };

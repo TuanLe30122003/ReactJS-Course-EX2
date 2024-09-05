@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "../Header";
 import PinkButton from "../../components/PinkButton";
 import { asset } from "../../assets/assets";
+import VideoPlay from "../../components/VideoPlay";
 
 const Hero2 = () => {
   return (
@@ -28,18 +29,7 @@ const Hero2 = () => {
           <a href="">More Details</a>
         </div>
 
-        <div className="hero-play">
-          <div className="circle">
-            <div>
-              <img src={asset.circleTrans} alt="" />
-            </div>
-            <div>
-              <img src={asset.playTrans} alt="" />
-            </div>
-          </div>
-
-          <p>Tour Video</p>
-        </div>
+        <VideoPlay />
       </div>
     </StyledHero2>
   );
