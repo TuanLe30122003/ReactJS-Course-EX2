@@ -14,7 +14,7 @@ const VideoPlay = (props) => {
         </div>
       </div>
 
-      <p>{props.title || "Tour Video"}</p>
+      <p>{props.title || ""}</p>
     </StyledVideoPlay>
   );
 };

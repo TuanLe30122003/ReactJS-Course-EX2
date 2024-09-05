@@ -29,7 +29,7 @@ const Hero2 = () => {
           <a href="">More Details</a>
         </div>
 
-        <VideoPlay />
+        <VideoPlay title="Tour Video" />
       </div>
     </StyledHero2>
   );

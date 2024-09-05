@@ -65,6 +65,17 @@ import servicedes3 from "./servicedes3.png";
 import banner2bg from "./responBG.png";
 import banner2blur from "./responBlur.png";
 import arrow from "./arrow-flip.png";
+import gal1 from "./gal1.png";
+import gal2 from "./gal2.png";
+import gal3 from "./gal3.png";
+import gal4 from "./gal4.png";
+import gal5 from "./gal5.png";
+import gal6 from "./gal6.png";
+import gal7 from "./gal7.png";
+import gal8 from "./gal8.png";
+import gal9 from "./gal9.png";
+import galBg from "./gal-banner-bg.png";
+import galBlur from "./gal-banner-blur.png";
 
 export const asset = {
   mainLogo,
@@ -134,4 +145,15 @@ export const asset = {
   banner2bg,
   banner2blur,
   arrow,
+  gal1,
+  gal2,
+  gal3,
+  gal4,
+  gal5,
+  gal6,
+  gal7,
+  gal8,
+  gal9,
+  galBg,
+  galBlur,
 };
