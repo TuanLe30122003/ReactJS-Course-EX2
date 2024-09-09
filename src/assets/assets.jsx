@@ -15,6 +15,7 @@ import aboutPic from "./about-pic.png";
 import fb from "./fb.png";
 import ig from "./ig.png";
 import twt from "./twt.png";
+import In from "./In.png";
 import footerBg from "./footer-bg.png";
 import bottomBg from "./BottomBG.png";
 import footerFb from "./footer-fb-icon.png";
@@ -84,6 +85,23 @@ import banner4blur from "./banner4blur.png";
 import sliderbg from "./sliderbg.png";
 import cusAvt from "./cus-avt.png";
 import star from "./star.png";
+import doubleArrow from "./double-arrow.png";
+import blogbg from "./blog-bg.png";
+import blogblur from "./blog-blur.png";
+import article1 from "./article1.png";
+import article2 from "./article2.png";
+import article3 from "./article3.png";
+import fileIcon from "./fileicon.png";
+import searchIcon from "./search-icon.png";
+import recent1 from "./recent1.png";
+import recent2 from "./recent2.png";
+import recent3 from "./recent3.png";
+import contact2Bubble from "./contact2-bubble.png";
+import contact2Pic from "./contact2Pic.png";
+import map from "./map.png";
+import location from "./location.png";
+import phone from "./phone.png";
+import mail from "./mail.png";
 
 export const asset = {
   mainLogo,
@@ -103,6 +121,7 @@ export const asset = {
   fb,
   ig,
   twt,
+  In,
   footerBg,
   footerFb,
   footerIg,
@@ -172,4 +191,21 @@ export const asset = {
   sliderbg,
   cusAvt,
   star,
+  doubleArrow,
+  blogbg,
+  blogblur,
+  article1,
+  article2,
+  article3,
+  fileIcon,
+  searchIcon,
+  recent1,
+  recent2,
+  recent3,
+  contact2Bubble,
+  contact2Pic,
+  map,
+  location,
+  phone,
+  mail,
 };

@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import PinkButton from "./PinkButton";
 import { Link } from "react-router-dom";
+import ContactPage from "../page/Contact/ContactPage";
 
 const Navigation = (props) => {
   return (
@@ -25,7 +26,12 @@ const Navigation = (props) => {
         </li>
       </ul>
 
-      <PinkButton buttonName="Contact" width="158px" height="52px" />
+      <PinkButton
+        buttonName="Contact"
+        width="158px"
+        height="52px"
+        direct="/contact"
+      />
     </StyledNavigation>
   );
 };

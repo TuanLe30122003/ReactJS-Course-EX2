@@ -56,7 +56,7 @@ const StyledCoreService3 = styled.div`
 
   .bubble {
     position: absolute;
-    top: 0;
+    top: -30px;
     left: 0;
     right: 0;
     z-index: -1;

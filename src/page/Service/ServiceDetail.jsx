@@ -46,7 +46,12 @@ const ServiceDetailItem = (props) => {
           textAlign="left"
           alignItems="flex-start"
         />
-        <p className="make-app">Make an Appointment </p>
+        <p className="make-app">
+          Make an Appointment{" "}
+          <div>
+            <img src={asset.doubleArrow} alt="" />
+          </div>
+        </p>
       </div>
     </StyledServiceDetailItem>
   );
@@ -97,6 +102,16 @@ const StyledServiceDetail = styled.div`
 
   .cover > .item:nth-child(3) div:nth-child(2) {
     transform: translate(-2px, 30px);
+  }
+
+  .make-app {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .make-app div {
+    margin-left: 16px;
+    transform: translate(0, 3px);
   }
 
   @media screen and (max-width: 1224px) {

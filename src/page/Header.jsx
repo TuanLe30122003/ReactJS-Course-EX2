@@ -3,6 +3,7 @@ import styled from "styled-components";
 import { useState } from "react";
 import MainLogo from "../components/MainLogo";
 import Navigation from "../components/Navigation";
+import { Link } from "react-router-dom";
 
 const Header = (props) => {
   const [menuStatus, setMenuStatus] = useState(false);
@@ -25,21 +26,21 @@ const Header = (props) => {
         <>
           <div className="y-nav-cover">
             <ul className="y-nav">
-              <li>
-                <a href="">Home</a>
+              <li id="home">
+                <Link to="/">Home</Link>
                 <i class="fa-solid fa-plus"></i>
               </li>
               <li>
-                <a href="">About</a>
+                <Link to="/about">About</Link>
               </li>
               <li>
-                <a href="">Service</a>
+                <Link to="/service">Service</Link>
               </li>
               <li>
-                <a href="">Gallery</a>
+                <Link to="/gallery">Gallery</Link>
               </li>
               <li>
-                <a href="">Blog</a>
+                <Link to="/blog">Blog</Link>
               </li>
             </ul>
 

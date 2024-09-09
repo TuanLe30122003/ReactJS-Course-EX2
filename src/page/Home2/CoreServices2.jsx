@@ -50,7 +50,12 @@ const ServiceItem = (props) => {
       <img src={props.img} alt="" />
       <h1>{props.title}</h1>
       <p>{props.des}</p>
-      <h3>Learn more</h3>
+      <h3>
+        Learn more{" "}
+        <div>
+          <img src={asset.doubleArrow} alt="" />
+        </div>
+      </h3>
     </StyledServiceItem>
   );
 };
@@ -95,6 +100,17 @@ const StyledServiceItem = styled.div`
     line-height: 17.5px;
     text-align: left;
     color: #ff64ae;
+    display: flex;
+    flex-direction: row;
+  }
+
+  h3 > div {
+    transform: translate(10px, 3px);
+  }
+
+  h3 > div img {
+    margin-bottom: 0;
+    width: 14px;
   }
 `;
 

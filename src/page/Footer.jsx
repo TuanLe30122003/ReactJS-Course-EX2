@@ -4,7 +4,7 @@ import styled from "styled-components";
 
 const Footer = () => {
   return (
-    <StyledFooter class="footer">
+    <StyledFooter className="footer">
       <div class="bg-footer">
         <img src={asset.footerBg} alt="" />
       </div>

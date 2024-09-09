@@ -136,23 +136,8 @@ const StyledHero2 = styled.div`
     margin-bottom: 40px;
   }
 
-  .hero-play {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    gap: 27px;
-    transform: translate(83px, 2px);
-  }
-
-  .hero-play p {
-    font-family: Poppins;
-    font-size: 16px;
-    font-weight: 600;
-    line-height: 24px;
-    letter-spacing: 0.1em;
-    text-align: left;
-    color: #ffffff;
-    transform: translate(83px, 0);
+  .hero-main .video-play {
+    transform: translate(82px, 2px);
   }
 
   @media screen and (max-width: 1224px) {

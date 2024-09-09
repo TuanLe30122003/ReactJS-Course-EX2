@@ -6,6 +6,8 @@ import AboutPage from "./page/About/AboutPage";
 import Gallery from "./page/Gallery/Gallery";
 import Service from "./page/Service/Service";
 import Team from "./page/Team/Team";
+import Blog from "./page/Blog/Blog";
+import ContactPage from "./page/Contact/ContactPage";
 
 function App() {
   return (
@@ -17,6 +19,8 @@ function App() {
         <Route path="/service" element={<Service />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/team" element={<Team />} />
+        <Route path="/blog" element={<Blog />} />
+        <Route path="/contact" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
   );
